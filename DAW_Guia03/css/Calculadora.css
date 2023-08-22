@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.calculadora {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+#inputValor {
+    padding: 25px;
+    font-size: 1.5rem;
+    text-align: right;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f8f8f8; /* color de fondo suave */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* sombra interna */
+    margin: 15px; /* espacio alrededor del input para que no esté pegado a los bordes de la calculadora */
+    transition: box-shadow 0.3s, border-color 0.3s; /* transición suave en el foco */
+}
+
+#inputValor:focus {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 5px rgba(33, 150, 243, 0.5); /* resalta el input con un efecto de foco */
+    border-color: #2196f3; /* color de borde al hacer foco */
+    outline: none; /* elimina el borde predeterminado del navegador en el foco */
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: 1px solid #e0e0e0; /* borde gris suavecito */
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #f1f1f1;
+    border-color: #d0d0d0; /* Intensifica el borde un poco en hover */
+}
+
+.azul {
+    color: blue;
+}
+
+.rojo {
+    color: red;
+}
